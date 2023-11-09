@@ -31,7 +31,7 @@ video {
   vertical-align: middle;
 }
 
-/* .row + .row,
+.row + .row,
 .container + .container {
   margin-top: 16px;
 }
@@ -42,4 +42,4 @@ video {
   padding-bottom: 12px;
   background-color: rgba(11, 0, 70, 0.15);
   border: 1px solid rgba(0, 0, 0, 0.2);
-} */
+}
