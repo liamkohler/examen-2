@@ -56,26 +56,50 @@ video {
 .main-image-container {
   width: 100%;
   height: 480px;
-  /* background-position: center;
-  background-size: cover;
-  background-attachment: fixed; */
-  background-image: url(../img/resto.png);
 
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+.banner {
+  background-image: url(../img/resto.png);
+  background-position: center;
+  background-size: cover;
   margin-bottom: 40px;
 }
 
 .image-ev-container {
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-bottom: 40px;
 }
 
 .image-ev {
+  margin-left: -12px;
   height: 320px;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
+  display: block;
+  max-inline-size: none;
+}
+
+@media (min-width: 576px) {
+  .image-ev {
+    margin-left: calc((100vw - 516px) / 2 * -1);
+  }
+}
+
+@media (min-width: 768px) {
+  .image-ev {
+    margin-left: calc((100vw - 696px) / 2 * -1);
+  }
+}
+
+@media (min-width: 992px) {
+  .image-ev {
+    margin: 0;
+    max-inline-size: 100%;
+  }
 }
 
 .title-ev {
@@ -96,6 +120,11 @@ video {
   margin: 40px 0 80px;
 }
 
+.border-bottom {
+  border-bottom: solid 1px var(--gold);
+  margin-bottom: 20px;
+}
+
 h2 {
   color: #9c7e30;
   font-family: "Italiana", sans-serif;
@@ -112,7 +141,11 @@ h3 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+div {
+  padding: 0;
 }
 
 p {
