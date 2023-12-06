@@ -201,6 +201,10 @@ video {
   border-bottom: solid 1px var(--gold);
 }
 
+.border-bottom-margin {
+  margin-bottom: 20px;
+}
+
 h2 {
   color: #9c7e30;
   font-family: "Italiana", sans-serif;
