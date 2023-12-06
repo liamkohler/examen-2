@@ -183,6 +183,12 @@ video {
   margin-bottom: 25px;
 }
 
+.center-top-bottom {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 .separation {
   margin: 40px 0;
 }
@@ -193,7 +199,6 @@ video {
 
 .border-bottom {
   border-bottom: solid 1px var(--gold);
-  margin-bottom: 20px;
 }
 
 h2 {
