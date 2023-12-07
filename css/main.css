@@ -52,12 +52,13 @@ video {
 
 .relative {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .burger {
   position: absolute;
-  top: 20px;
-  right: 20px;
   z-index: 1;
   width: 40px;
   height: 20px;
@@ -69,6 +70,14 @@ video {
   height: 2px;
   background: var(--gold);
   transition: transform 0.3s, opacity 0.3s;
+}
+
+.burger.is-active {
+  position: fixed;
+}
+
+.burger:hover div {
+  background: var(--white);
 }
 
 .burger div:nth-child(1) {
@@ -110,16 +119,35 @@ video {
 }
 
 .menu {
+  text-align: center;
   position: fixed;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 50px;
-  background: #ccc;
+  padding: 100px 40px 40px;
+  margin-right: -45px;
+  background: var(--background-site);
+  display: flex;
+  justify-content: center;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+li {
+  list-style: none;
+}
+
+.border-bottom-menu {
+  margin: 40px 0;
 }
 
 .main-image {
+  transition: transform 0.5s;
+}
+
+.main-image:hover {
+  transform: translateY(15px);
 }
 
 .main-image-container {
@@ -151,9 +179,27 @@ video {
   max-inline-size: none;
 }
 
+@media (max-width: 575px) {
+  p {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+}
+
 @media (min-width: 576px) {
   .image-ev {
     margin-left: calc((100vw - 516px) / 2 * -1);
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 24px;
   }
 }
 
@@ -217,7 +263,6 @@ h2 {
 h3 {
   color: #e6e6e6;
   font-family: Inter;
-  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -231,14 +276,15 @@ div {
 p {
   color: var(--grey);
   font-family: Inter;
-  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 33px;
   margin-bottom: 40px;
 }
 
-.contact {
+footer a:hover {
+  transition: 0.2s;
+  color: var(--gold);
 }
 
 .link-image {
