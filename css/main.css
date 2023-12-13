@@ -142,6 +142,16 @@ li {
   margin: 40px 0;
 }
 
+.francais {
+  color: #9c7e30;
+  font-size: 20px;
+}
+
+.deutch {
+  color: #6c6c6c;
+  font-size: 20px;
+}
+
 .main-image {
   transition: transform 0.5s;
 }
@@ -205,15 +215,12 @@ li {
 
 @media (min-width: 768px) {
   .image-ev {
-    margin-left: calc((100vw - 696px) / 2 * -1);
+    margin: 0;
+    max-inline-size: 100%;
   }
 }
 
 @media (min-width: 992px) {
-  .image-ev {
-    margin: 0;
-    max-inline-size: 100%;
-  }
   .contact {
     text-align: left;
   }
@@ -227,6 +234,9 @@ li {
 .date-ev {
   font-size: 24px;
   margin-bottom: 25px;
+}
+
+.swiper {
 }
 
 .center-top-bottom {
@@ -297,4 +307,5 @@ footer a:hover {
 
 .logo-footer {
   width: 450px;
+  margin: auto;
 }

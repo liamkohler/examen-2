@@ -7,3 +7,10 @@ var toggleMenu = function toggleMenu() {
   burger.classList.toggle("is-active");
 };
 burger.addEventListener("click", toggleMenu);
+
+const swiper = new Swiper(".swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
